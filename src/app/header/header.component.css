@@ -1,0 +1,20 @@
+.navbar {
+    padding: 15px;
+  }
+  
+  .form-inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn-warning {
+    background-color: #ff9f00;
+    border: none;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  

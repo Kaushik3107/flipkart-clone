@@ -1,0 +1,11 @@
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <img [src]="product?.image" class="img-fluid mb-4" alt="Product Image" />
+      <h3>{{ product?.name }}</h3>
+      <p>{{ product?.price | currency }}</p>
+      <p>{{ product?.description }}</p>
+      <button class="btn btn-primary" (click)="addToCart()">Add to Cart</button>
+    </div>
+  </div>
+</div>

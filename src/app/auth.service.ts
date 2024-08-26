@@ -33,6 +33,8 @@ export class AuthService {
     const storedUser = JSON.parse(
       localStorage.getItem(this.storageKey) || '{}'
     );
-    return storedUser.name || null;
+    console.log(storedUser);
+    console.log(storedUser.firstName);
+    return storedUser.firstName || null;
   }
 }

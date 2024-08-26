@@ -15,6 +15,7 @@ export class HeaderComponent {
   ngOnInit() {
     this.isLoggedIn = this.authService.isLoggedIn();
     this.userName = this.authService.getUserName();
+    console.log(this.userName);
   }
 
   logout() {

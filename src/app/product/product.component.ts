@@ -29,35 +29,96 @@ export class ProductComponent implements OnInit {
         name: 'HP Laptop',
         price: 75000,
         image: 'assets/lapi1.jpeg',
-        description: 'Description 1',
+        description:
+          'Stylish & Portable Thin and Light Laptop 15.6 inch Full HD, IPS Screen Finger Print Sensor for Faster System Access Light Laptop without Optical Disk Drive',
       },
       {
         id: '2',
         name: 'MAC Book Laptop',
         price: 150000,
         image: 'assets/lapi2.jpeg',
-        description: 'Description 2',
+        description:
+          'Stylish & Portable Thin and Light Laptop 15.6 inch Full HD, IPS Screen Finger Print Sensor for Faster System Access Light Laptop without Optical Disk Drive',
       },
       {
         id: '3',
         name: 'Redmi Mobile 13',
         price: 20000,
-        image: 'assets/lapi2.jpeg',
-        description: 'Description 2',
+        image: 'assets/redmi.jpeg',
+        description:
+          '6 GB RAM | 128 GB ROM 17.25 cm (6.79 inch) Full HD+ Display 108MP Rear Camera 5030 mAh Battery Qualcomm SM4450 Snapdragon 4 Gen 2 AE (4 nm) Processor',
       },
       {
         id: '4',
         name: 'iPhone 15',
         price: 180000,
-        image: 'assets/lapi2.jpeg',
-        description: 'Description 2',
+        image: 'assets/iphone.jpeg',
+        description:
+          '128 GB ROM 17.02 cm (6.7 inch) Super Retina XDR Display 12MP + 12MP + 12MP | 12MP Front Camera A14 Bionic Chip with Next Generation Neural Engine Processor Ceramic Shield | Industry-leading IP68 Water Resistance All Screen OLED Display LiDAR Scanner for Improved AR Experiences, Night Mode Portraits',
       },
       {
         id: '5',
         name: 'Samsung s23',
         price: 150000,
+        image: 'assets/s23.jpeg',
+        description:
+          '8 GB RAM | 128 GB ROM 15.49 cm (6.1 inch) Full HD+ Display 50MP + 10MP + 12MP | 12MP Front Camera 3900 mAh Lithium Ion Battery Qualcomm Snapdragon 8 Gen 2 Processor',
+      },
+      {
+        id: '1',
+        name: 'HP Laptop',
+        price: 75000,
+        image: 'assets/lapi1.jpeg',
+        description:
+          'Stylish & Portable Thin and Light Laptop 15.6 inch Full HD, IPS Screen Finger Print Sensor for Faster System Access Light Laptop without Optical Disk Drive',
+      },
+      {
+        id: '2',
+        name: 'MAC Book Laptop',
+        price: 150000,
         image: 'assets/lapi2.jpeg',
-        description: 'Description 2',
+        description:
+          'Stylish & Portable Thin and Light Laptop 15.6 inch Full HD, IPS Screen Finger Print Sensor for Faster System Access Light Laptop without Optical Disk Drive',
+      },
+      {
+        id: '3',
+        name: 'Redmi Mobile 13',
+        price: 20000,
+        image: 'assets/redmi.jpeg',
+        description:
+          '6 GB RAM | 128 GB ROM 17.25 cm (6.79 inch) Full HD+ Display 108MP Rear Camera 5030 mAh Battery Qualcomm SM4450 Snapdragon 4 Gen 2 AE (4 nm) Processor',
+      },
+      {
+        id: '4',
+        name: 'iPhone 15',
+        price: 180000,
+        image: 'assets/iphone.jpeg',
+        description:
+          '128 GB ROM 17.02 cm (6.7 inch) Super Retina XDR Display 12MP + 12MP + 12MP | 12MP Front Camera A14 Bionic Chip with Next Generation Neural Engine Processor Ceramic Shield | Industry-leading IP68 Water Resistance All Screen OLED Display LiDAR Scanner for Improved AR Experiences, Night Mode Portraits',
+      },
+      {
+        id: '1',
+        name: 'HP Laptop',
+        price: 75000,
+        image: 'assets/lapi1.jpeg',
+        description:
+          'Stylish & Portable Thin and Light Laptop 15.6 inch Full HD, IPS Screen Finger Print Sensor for Faster System Access Light Laptop without Optical Disk Drive',
+      },
+      {
+        id: '2',
+        name: 'MAC Book Laptop',
+        price: 150000,
+        image: 'assets/lapi2.jpeg',
+        description:
+          'Stylish & Portable Thin and Light Laptop 15.6 inch Full HD, IPS Screen Finger Print Sensor for Faster System Access Light Laptop without Optical Disk Drive',
+      },
+      {
+        id: '3',
+        name: 'Redmi Mobile 13',
+        price: 20000,
+        image: 'assets/redmi.jpeg',
+        description:
+          '6 GB RAM | 128 GB ROM 17.25 cm (6.79 inch) Full HD+ Display 108MP Rear Camera 5030 mAh Battery Qualcomm SM4450 Snapdragon 4 Gen 2 AE (4 nm) Processor',
       },
       // Add more products here
     ];

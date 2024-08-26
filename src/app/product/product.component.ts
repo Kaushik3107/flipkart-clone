@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CartService, Product } from '../cart.service';
 
 @Component({
@@ -12,6 +12,7 @@ export class ProductComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     private cartService: CartService
   ) {}
 
@@ -25,16 +26,37 @@ export class ProductComponent implements OnInit {
     const products: Product[] = [
       {
         id: '1',
-        name: 'Product 1',
-        price: 100,
-        image: 'image1.jpg',
+        name: 'HP Laptop',
+        price: 75000,
+        image: 'assets/lapi1.jpeg',
         description: 'Description 1',
       },
       {
         id: '2',
-        name: 'Product 2',
-        price: 200,
-        image: 'image2.jpg',
+        name: 'MAC Book Laptop',
+        price: 150000,
+        image: 'assets/lapi2.jpeg',
+        description: 'Description 2',
+      },
+      {
+        id: '3',
+        name: 'Redmi Mobile 13',
+        price: 20000,
+        image: 'assets/lapi2.jpeg',
+        description: 'Description 2',
+      },
+      {
+        id: '4',
+        name: 'iPhone 15',
+        price: 180000,
+        image: 'assets/lapi2.jpeg',
+        description: 'Description 2',
+      },
+      {
+        id: '5',
+        name: 'Samsung s23',
+        price: 150000,
+        image: 'assets/lapi2.jpeg',
         description: 'Description 2',
       },
       // Add more products here
@@ -45,6 +67,7 @@ export class ProductComponent implements OnInit {
   addToCart(): void {
     if (this.product) {
       this.cartService.addToCart(this.product);
+      this.router.navigate(['/cart']);
     } else {
       console.error('Product is undefined');
     }

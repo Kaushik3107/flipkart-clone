@@ -1,11 +1,43 @@
 <div class="container my-5">
-  <div class="row justify-content-center">
+  <div class="row">
+    <!-- Left Section: Product Image -->
+    <div class="col-md-6 d-flex justify-content-center align-items-center">
+      <img
+        [src]="product?.image"
+        class="img-fluid product-image"
+        alt="Product Image"
+      />
+    </div>
+
+    <!-- Right Section: Product Details -->
     <div class="col-md-6">
-      <img [src]="product?.image" class="img-fluid mb-4" alt="Product Image" />
       <h3>{{ product?.name }}</h3>
-      <p>{{ product?.price | currency }}</p>
+      <div class="price-section my-3">
+        <span class="text-success display-4">{{
+          product?.price | currency
+        }}</span>
+        <span class="text-muted"><del>₹6,999</del></span>
+        <span class="text-success">78% off</span>
+      </div>
+      <p class="text-muted">Special price</p>
       <p>{{ product?.description }}</p>
-      <button class="btn btn-primary" (click)="addToCart()">Add to Cart</button>
+
+      <!-- Buttons Section -->
+      <div class="button-group mt-4">
+        <button class="btn btn-warning btn-lg mr-2" (click)="addToCart()">
+          <i class="fas fa-shopping-cart"></i> Add to Cart
+        </button>
+        <button class="btn btn-danger btn-lg">
+          <i class="fas fa-bolt"></i> Buy Now
+        </button>
+      </div>
+
+      <!-- Delivery Details -->
+      <div class="mt-4">
+        <p>1 year warranty from the date of purchase</p>
+        <p>Delivery by Tomorrow, <strong>Free</strong></p>
+        <p class="text-muted">Know More</p>
+      </div>
     </div>
   </div>
 </div>

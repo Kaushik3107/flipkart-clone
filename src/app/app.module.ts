@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ProductComponent } from './product/product.component';
 import { CartComponent } from './cart/cart.component';
+import { AuthService } from './auth.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { CartComponent } from './cart/cart.component';
     BrowserAnimationsModule,
     ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

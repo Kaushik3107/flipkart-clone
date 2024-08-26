@@ -10,7 +10,11 @@
     <button class="btn btn-warning my-2 my-sm-0" type="submit">Search</button>
   </form>
   <div>
-    <a class="text-white mx-2" routerLink="/login">Login</a>
+    <!-- <a class="text-white mx-2" routerLink="/login">Login</a> -->
+
+    <a *ngIf="!isLoggedIn" routerLink="/login">Login</a>
+    <span *ngIf="isLoggedIn">Hello, {{ userName }}</span>
+    <a *ngIf="isLoggedIn" (click)="logout()">Logout</a>
     <a class="text-white mx-2" routerLink="/cart">Cart</a>
   </div>
 </nav>

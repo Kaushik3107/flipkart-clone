@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-signup',
@@ -9,19 +11,20 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class SignupComponent {
   signupForm: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(
+    private fb: FormBuilder,
+    private authService: AuthService,
+    private router: Router
+  ) {
     this.signupForm = this.fb.group({
-      firstName: ['', Validators.required],
-      lastName: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', Validators.required],
+      name: [''],
+      email: [''],
+      password: [''],
     });
   }
 
   onSubmit() {
-    if (this.signupForm.valid) {
-      // Handle signup logic here (local storage for simulation)
-      alert('Registered successfully!');
-    }
+    this.authService.signup(this.signupForm.value);
+    this.router.navigate(['/login']);
   }
 }

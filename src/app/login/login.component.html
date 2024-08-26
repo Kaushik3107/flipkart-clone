@@ -25,6 +25,7 @@
         <a routerLink="/signup" class="btn btn-link"
           >Don't have an account? Sign up</a
         >
+        <p *ngIf="loginError" style="color: red">Invalid email or password</p>
       </form>
     </div>
   </div>
